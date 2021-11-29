@@ -11,6 +11,9 @@ const dev = process.env.NODE_ENV !== 'production';
 module.exports = {
   devtool: 'inline-source-map',
   entry: './src/index.ts',
+  experiments: {
+    outputModule: true
+  },
   externals: [
     'classnames',
     'react',
@@ -57,13 +60,17 @@ module.exports = {
   },
   output: {
     filename: 'index.js',
+    environment: {
+      module: true
+    },
     library: {
-      type: 'umd'
+      type: 'module'
     },
     path: path.join(__dirname, '/lib')
   },
   plugins: [new MiniCssExtractPlugin()],
   resolve: {
     extensions: ['.css', '.js', '.jsx', '.scss', '.ts', '.tsx']
-  }
+  },
+  target: 'web'
 };
