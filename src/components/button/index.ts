@@ -1,1 +1,4 @@
-export { StandardButton } from './standard'
+export {
+  StandardButtonCssModules,
+  StandardButtonStyledComponent
+} from './standard-button';
