@@ -12,7 +12,7 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
-    "outDir": "lib/esm",
+    "outDir": "lib",
     "sourceMap": true,
     "strictNullChecks": true,
     "target": "es5"
