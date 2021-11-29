@@ -37,7 +37,6 @@
   ],
   "homepage": "https://www.brandfolder.com",
   "license": "UNLICENCED",
-  "main": "lib/index.js",
   "module": "lib/index.js",
   "name": "@zachwinnie/webpack-esm",
   "peerDependencies": {
@@ -59,5 +58,5 @@
     "watch": "NODE_ENV=development && webpack --watch"
   },
   "types": "lib/index.d.ts",
-  "version": "1.0.5"
+  "version": "1.0.6"
 }
