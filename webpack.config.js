@@ -10,10 +10,10 @@ const dev = process.env.NODE_ENV !== 'production';
 module.exports = {
   devtool: 'inline-source-map',
   entry: './src/index.ts',
-  externals: {
-    'react': 'react',
-    'react-dom': 'react-dom'
-  },
+  externals: [
+    'react',
+    'react-dom',
+  ],
   mode: process.env.NODE_ENV || 'development',
   module: {
     rules: [
@@ -26,7 +26,9 @@ module.exports = {
   },
   output: {
     filename: 'index.js',
-    libraryTarget: 'umd',
+    library: {
+      type: 'umd'
+    },
     path: path.join(__dirname, '/lib')
   },
   resolve: {

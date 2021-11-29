@@ -9,7 +9,16 @@
     "@types/react": "17.0.37",
     "@types/react-dom": "17.0.11",
     "del-cli": "4.0.1",
-    "ts-loader": "8.3.0",
+    "mini-css-extract-plugin": "2.4.5",
+    "postcss": "8.4.4",
+    "postcss-cli": "9.0.2",
+    "postcss-loader": "6.2.1",
+    "sass": "1.43.5",
+    "sass-loader": "12.3.0",
+    "source-map-loader": "3.0.0",
+    "style-loader": "3.3.1",
+    "ts-loader": "9.2.6",
+    "typed-scss-modules": "4.1.1",
     "typescript": "4.5.2",
     "webpack": "4.46.0",
     "webpack-cli": "3.3.12"
@@ -42,5 +51,5 @@
     "watch": "NODE_ENV=development && webpack --watch"
   },
   "types": "lib/index.d.ts",
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
